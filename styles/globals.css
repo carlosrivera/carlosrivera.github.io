@@ -1,16 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  background-color: black;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Barlow, 'Montserrat', serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main-mask {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(168 173 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"); 
+
+}
+.outline-title-600 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #84cc16;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-* {
-  box-sizing: border-box;
+.outline-title-400 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #a3e635;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.outline-title-b-400 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #60a5fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
