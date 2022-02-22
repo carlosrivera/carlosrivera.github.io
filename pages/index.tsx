@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap md:flex-nowrap justify-center my-8 md:inline-flex md:items-center md:mb-0">
-              <Image src="/profile-sq.jpg" className="w-6/12 md:w-full md:max-w-xs h-auto rounded-full shadow-lg hover:rotate-6 hover:scale-110 transition-all" alt="..." />
+              <img src="/profile-sq.jpg" className="w-6/12 md:w-full md:max-w-xs h-auto rounded-full shadow-lg hover:rotate-6 hover:scale-110 transition-all" alt="..." />
               <p className="align-middle text-zinc-400 sm:text-md md:text-lg md:pl-16 mt-10">
                 Passionate coder in love with <label className="text-white">tacos</label> and <label className="text-white">craft beer</label> (my DM&apos;s are always open for both), with an extensive 
                 experience in <label className="text-lime-400">Aerospace</label> (energy and fuel optimization, predictive maintenance, automatic routing planning), <label className="text-lime-400">Finance</label> (risk assestment, fraud detection, price forecasting), 
