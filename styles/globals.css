@@ -5,7 +5,7 @@
 html,
 body {
   background-color: black;
-  background-image: url('https://images.unsplash.com/photo-1525220964737-6c299398493c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-image: url('https://images.unsplash.com/photo-1624380778466-e582a0b4482d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80');
   background-position: center;
   background-size: contain;
   padding: 0;
@@ -62,7 +62,7 @@ a.text-fx:hover::before {
 }
 
 .backdrop {
-  backdrop-filter: blur(64px) saturate(180%);
+  backdrop-filter: blur(96px) saturate(180%);
 }
 
 .main-mask {
