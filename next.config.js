@@ -1,7 +1,9 @@
-module.exports = {
-  reactStrictMode: true,
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-}
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+    output: "export",
+    reactStrictMode: true,
+};
+
+module.exports = nextConfig;
