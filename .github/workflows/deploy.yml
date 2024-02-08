@@ -18,10 +18,10 @@ jobs:
           node-version: '20.x'
 
       - name: Installing my packages
-        run: npm ci
+        run: pnpm i
 
       - name: Build my App
-        run: npm run build && npm run export && touch ./out/.nojekyll
+        run: pnpm run build && pnpm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
