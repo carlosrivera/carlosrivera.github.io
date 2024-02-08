@@ -4,92 +4,101 @@
 
 html,
 body {
-  background-color: black;
-  background-image: url('https://images.unsplash.com/photo-1624380778466-e582a0b4482d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80');
-  background-position: center;
-  background-size: contain;
-  padding: 0;
-  margin: 0;
-  font-family: Barlow, 'Montserrat', serif;
+    background-color: "rgba(0, 0, 0, 0.75)";
+    padding: 0;
+    margin: 0;
+    font-family: Barlow, "Montserrat", serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/backdrop.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 a.text-fx::after {
-  content: "⌝";
-  text-decoration: none !important;
-  transition: 500ms ease;
+    content: "⌝";
+    text-decoration: none !important;
+    transition: 500ms ease;
 }
 
 a.text-fx:hover::after {
-  position: relative;
-  top: -4px;
-  right: -2px;
-  transition: all 500ms ease;
+    position: relative;
+    top: -4px;
+    right: -2px;
+    transition: all 500ms ease;
 }
 
 a.text-fx::before {
-  content: "⌞";
-  text-decoration: none !important;
-  transition: all 500ms ease;
+    content: "⌞";
+    text-decoration: none !important;
+    transition: all 500ms ease;
 }
 
 a.text-fx:hover::before {
-  position: relative;
-  bottom: -4px;
-  left: -2px;
-  transition: all 500ms ease;
+    position: relative;
+    bottom: -4px;
+    left: -2px;
+    transition: all 500ms ease;
 }
 
 .profile {
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  animation: profile-morph 8s ease-in-out 1s infinite;
-  overflow: hidden;
-  background-size: cover;
-
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: profile-morph 8s ease-in-out 1s infinite;
+    overflow: hidden;
+    background-size: cover;
 }
 
 @keyframes profile-morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
 
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
 
 .backdrop {
-  backdrop-filter: blur(96px) saturate(180%);
+    backdrop-filter: blur(96px) saturate(180%);
 }
 
 .main-mask {
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(168 173 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"); 
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(168 173 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
 
 .outline-title-600 {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #84cc16;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px #84cc16;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .outline-title-400 {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #a3e635;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px #a3e635;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .outline-title-b-400 {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #60a5fa;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px #60a5fa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
