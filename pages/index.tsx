@@ -17,7 +17,7 @@ const ExternalLink = ({ href, children }) => (
 
 export default function Home() {
     return (
-        <div className="relative dark bg-[#101113] bg-opacity-30 overflow-hidden min-h-screen">
+        <div className="main relative dark bg-[#101113] bg-opacity-30 overflow-hidden min-h-screen">
             <div className="mx-auto">
                 <div className="absolute inset-0 bg-bottom bg-no-repeat bg-[#101113] bg-opacity-60 backdrop">
                     <div className="absolute inset-0 bg-bottom main-mask"></div>

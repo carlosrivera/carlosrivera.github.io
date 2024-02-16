@@ -4,10 +4,19 @@
 
 html,
 body {
-    background-color: "rgba(0, 0, 0, 0.75)";
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0;
     margin: 0;
     font-family: Barlow, "Montserrat", serif;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body::before {
@@ -20,7 +29,7 @@ body::before {
     background-image: url("/backdrop.jpg");
     background-position: center;
     background-size: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 a.text-fx::after {
